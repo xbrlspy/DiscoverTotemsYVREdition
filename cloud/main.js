@@ -1,11 +1,10 @@
 function getPlacemarks() {
-  
   var lat = 'undefined' !== typeof $params.lat ? $params.lat : 49.299277,
       lon = 'undefined' !== typeof $params.lon ? $params.lon : -123.120867;
   // Add the passed in location to a points array
   var points = [{lat: lat, lon: lon, title: 'Totem Pole Central: Stanley Park!'}];
     
-  // Push some more closeby points onto the array as edited in GitHub
+  // Push some more closeby points onto the array
   //my Vancouver Edition list
 points.push({lat: 49.1943167455, lon: -123.179767288, title: 'Airport Totems'});
 points.push({lat: lat + 49.299353, lon: lon -123.121044, title: 'Stanley Park'});
@@ -33,6 +32,5 @@ points.push({lat: lat + 49.35755, lon: lon -123.271547, title: 'West Vancouver Y
 points.push({lat: lat + 49.26355, lon: lon -123.254083, title: 'Whaler Pole'});
 points.push({lat: lat + 49.322797, lon: lon -123.113275, title: 'Tomahawk Cafe Poles'});
   //end of my list
-  
   return {points: points};
 }
