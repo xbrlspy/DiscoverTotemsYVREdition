@@ -4,7 +4,7 @@ function getPlacemarks() {
   // Add the passed in location to a points array
   var points = [{lat: lat, lon: lon, title: 'Totem Pole Central: Stanley Park!'}];
     
-  // Push some more closeby points onto the array
+  // Push some more closeby points onto the array as edited in GitHub
   //my Vancouver Edition list
 points.push({lat: 49.1943167455, lon: -123.179767288, title: 'Airport Totems'});
 points.push({lat: lat + 49.299353, lon: lon -123.121044, title: 'Stanley Park'});
