@@ -3,8 +3,8 @@ var map = function () {
     
     // Show the map on screen
     show: function () {
-      var lat = 52.88,
-          lon = -7.96; // Location of Moneygall, Co. Offaly
+      var lat = 49.299277,
+          lon = -123.120867; // Location of Stanley Park, Vancouver BC
           
       //Pass lat & lon into map api, initialising map at that point
       $fh.map({
