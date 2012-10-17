@@ -15,6 +15,9 @@ var map = function () {
      }, function(res) {
       console.log('lon=' + res.lon + ', lat=' + res.lat + ', alt=' + res.alt + ', at=' + res.when);
     });
+    $fh.log({
+    message: 'your log message'
+  });
     // End Alt
     // End Get Current Location
           
