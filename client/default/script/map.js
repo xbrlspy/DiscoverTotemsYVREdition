@@ -9,6 +9,13 @@ var map = function () {
       $fh.geoip(function(res) {
         console.log(JSON.stringify(res.geoip));
       });
+    // Alt
+    $fh.geo({
+       interval: 5000
+     }, function(res) {
+      console.log('lon=' + res.lon + ', lat=' + res.lat + ', alt=' + res.alt + ', at=' + res.when);
+    });
+    // End Alt
     // End Get Current Location
           
       //Pass lat & lon into map api, initialising map at that point
