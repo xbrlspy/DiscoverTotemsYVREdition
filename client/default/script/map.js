@@ -5,21 +5,7 @@ var map = function () {
     show: function () {
       var lat = 49.299277,
           lon = -123.120867; // Location of Stanley Park, Vancouver BC
-    // Get Current Location
-      $fh.geoip(function(res) {
-        console.log(JSON.stringify(res.geoip));
-      });
-    // Alt
-    $fh.geo({
-       interval: 5000
-     }, function(res) {
-      console.log('lon=' + res.lon + ', lat=' + res.lat + ', alt=' + res.alt + ', at=' + res.when);
-    });
-    $fh.log({
-    message: 'your log message'
-  });
-    // End Alt
-    // End Get Current Location
+
           
       //Pass lat & lon into map api, initialising map at that point
       $fh.map({
